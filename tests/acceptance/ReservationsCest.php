@@ -66,7 +66,6 @@ class ReservationsCest
         $I->pause();
         $I->comment("Create Succeed");
     }
-
     /**
      * @param FirstSteps $I
      * @param $scenario
@@ -82,7 +81,6 @@ class ReservationsCest
         $I->pause();
         $I->comment("Create Failed");
     }
-
     /**
      * @param FirstSteps $I
      * @param $scenario

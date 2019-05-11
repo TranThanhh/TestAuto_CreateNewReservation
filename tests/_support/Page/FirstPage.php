@@ -25,6 +25,10 @@ class FirstPage
      */
     public static $clearButton="//a[@href=\"reservationform.clear\"]";
     /**
+     * @var string
+     */
+    public static $editButton="((//td[@class=\"edit\"])/a)[3]";
+    /**
      * Basic route example for your current URL
      * You can append any additional parameter to URL
      * and use it in tests like: Page\Edit::route('/123-post');

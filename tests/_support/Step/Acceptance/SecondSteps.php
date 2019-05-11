@@ -23,7 +23,7 @@ class SecondSteps extends \AcceptanceTester
         $I->fillField(SecondPage::$date,$date);
         $I->fillField(SecondPage::$descript,$des);
         $I->fillField(SecondPage::$startTime,$startTime);
-        $I->click(SecondPage::$buttonAddOrEdit);
+        $I->click(FirstPage::$addOrEditButton);
         //$I->pause();
     }
 }

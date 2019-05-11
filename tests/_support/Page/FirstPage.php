@@ -17,6 +17,14 @@ class FirstPage
      */
     public  static $nextpage="//div[@class=\"t-data-grid-pager\"]/a";
     /**
+     * @var string
+     */
+    public static $addOrEditButton="//input[@class=\"t-beaneditor-submit\"]";
+    /**
+     * @var string
+     */
+    public static $clearButton="//a[@href=\"reservationform.clear\"]";
+    /**
      * Basic route example for your current URL
      * You can append any additional parameter to URL
      * and use it in tests like: Page\Edit::route('/123-post');

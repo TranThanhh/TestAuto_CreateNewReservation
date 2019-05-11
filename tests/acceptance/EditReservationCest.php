@@ -32,8 +32,8 @@ class EditReservationCest
      */
     public  function __construct()
     {
-        $this->tableIDValid="5";
-        $this->numPerson="6";
+        $this->tableIDValid="3";
+        $this->numPerson="3";
         $this->date="05/10/2019";
         $this->descript="booking online";
         $this->startTime="22";

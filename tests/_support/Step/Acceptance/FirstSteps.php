@@ -30,4 +30,15 @@ class FirstSteps extends \AcceptanceTester
         $I->clearField(SecondPage::$date);
     }
 
+    /**
+     * @throws \Exception
+     */
+    public function sortTableByID()
+    {
+        $I=$this;
+        $I->amOnPage(FirstPage::$URL);
+        $I->waitForElementVisible(FirstPage::$sortIDimg,20);
+        $I->click(FirstPage::$sortIDimg);
+    }
+
 }

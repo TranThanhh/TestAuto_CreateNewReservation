@@ -80,7 +80,7 @@ class EditReservationCest
         $I->wantToTest("I want to test edit successfully with value valid!");
         $I->editReservation();
         $I=new SecondSteps($scenario);
-        $I->fillInput1($this->reservation1);
+        $I->fillInput($this->reservation1);
         $I->pause();
         $I->comment("Edit Successfully!");
     }
@@ -97,9 +97,9 @@ class EditReservationCest
         $I->wantToTest("I want to test edit unsuccess with id was null");
         $I->editReservation();
         $I=new SecondSteps($scenario);
-        $I->fillInput1($this->reservation2);
+        $I->fillInput($this->reservation2);
         $I->pause();
-        $I->comment("Success");
+        $I->comment("Edit UnSuccessfully!");
     }
     /**
      * @param FirstSteps $I
@@ -113,9 +113,9 @@ class EditReservationCest
         $I->wantToTest("I want to test edit unsuccess with number of person was null");
         $I->editReservation();
         $I=new SecondSteps($scenario);
-        $I->fillInput1($this->reservation3);
+        $I->fillInput($this->reservation3);
         $I->pause();
-        $I->comment("Success");
+        $I->comment("Edit UnSuccessfully!");
     }
     /**
      * @param FirstSteps $I
@@ -129,9 +129,9 @@ class EditReservationCest
         $I->wantToTest("I want to test edit unsuccess with start time was null");
         $I->editReservation();
         $I=new SecondSteps($scenario);
-        $I->fillInput1($this->reservation2);
+        $I->fillInput($this->reservation2);
         $I->pause();
-        $I->comment("Success");
+        $I->comment("Edit UnSuccessfully!");
     }
 
 }

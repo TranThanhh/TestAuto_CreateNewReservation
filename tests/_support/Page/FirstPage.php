@@ -29,6 +29,10 @@ class FirstPage
      */
     public static $editButton="((//td[@class=\"edit\"])/a)[3]";
     /**
+     * @var string
+     */
+    public static $sortIDimg="//th[@class=\"id t-first\"]/a/img";
+    /**
      * Basic route example for your current URL
      * You can append any additional parameter to URL
      * and use it in tests like: Page\Edit::route('/123-post');

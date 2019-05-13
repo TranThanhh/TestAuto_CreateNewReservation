@@ -13,7 +13,7 @@ class ReservationsCest extends EditReservationCest
     {
         $I->createReservation();
         $I=new SecondSteps($scenario);
-        $I->fillInput1($this->reservation1);
+        $I->fillInput($this->reservation1);
         $I->pause();
         $I->comment("Create Succeed");
     }
@@ -27,7 +27,7 @@ class ReservationsCest extends EditReservationCest
         $I->openNewTab();
         $I->createReservation();
         $I=new SecondSteps($scenario);
-        $I->fillInput1($this->reservation5);
+        $I->fillInput($this->reservation5);
         $I->waitForText("Table ID is not existing !","10");
         $I->pause();
         $I->comment("Create Failed");
@@ -42,7 +42,7 @@ class ReservationsCest extends EditReservationCest
         $I->openNewTab();
         $I->createReservation();
         $I=new SecondSteps($scenario);
-        $I->fillInput1($this->reservation2);
+        $I->fillInput($this->reservation2);
         $I->waitForText("You must correct the following errors before you may continue.","10");
         $I->pause();
         $I->comment("Create Failed");
@@ -58,7 +58,7 @@ class ReservationsCest extends EditReservationCest
         $I->openNewTab();
         $I->createReservation();
         $I=new SecondSteps($scenario);
-        $I->fillInput1($this->reservation3);
+        $I->fillInput($this->reservation3);
         $I->waitForText("You must correct the following errors before you may continue.","10");
         $I->pause();
         $I->comment("Create Failed");
@@ -73,7 +73,7 @@ class ReservationsCest extends EditReservationCest
         $I->openNewTab();
         $I->createReservation();
         $I=new SecondSteps($scenario);
-        $I->fillInput1($this->reservation4);
+        $I->fillInput($this->reservation4);
         $I->waitForText("You must correct the following errors before you may continue.","10");
         $I->pause();
         $I->comment("Create Failed");

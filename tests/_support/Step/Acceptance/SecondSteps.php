@@ -26,4 +26,41 @@ class SecondSteps extends \AcceptanceTester
         $I->click(FirstPage::$addOrEditButton);
         //$I->pause();
     }
+
+    /**
+     * @param array $reservationSuccess
+     * @throws \Exception
+     */
+    public function fillInput1($reservationSuccess=array())
+    {
+        $I=$this;
+        $I->waitForElementVisible(SecondPage::$tableID,30);
+        $I->fillField(SecondPage::$tableID,$reservationSuccess['id']);
+        $I->fillField(SecondPage::$numPerson,$reservationSuccess['number']);
+        $I->fillField(SecondPage::$date,$reservationSuccess['date']);
+        $I->fillField(SecondPage::$descript,$reservationSuccess['des']);
+        $I->fillField(SecondPage::$startTime,$reservationSuccess['time']);
+        $I->click(FirstPage::$addOrEditButton);
+//        if(isset($reservation['des']))
+//        {
+//
+//        }
+    }
+
+    /**
+     * @param array $reservationUnSuccess
+     * @throws \Exception
+     */
+    public function fillInput2($reservationUnSuccess=array())
+    {
+        $I=$this;
+        $I->waitForElementVisible(SecondPage::$tableID,30);
+        $I->fillField(SecondPage::$tableID,$reservationUnSuccess['id']);
+        $I->fillField(SecondPage::$numPerson,$reservationUnSuccess['number']);
+        $I->fillField(SecondPage::$date,$reservationUnSuccess['date']);
+        $I->fillField(SecondPage::$descript,$reservationUnSuccess['des']);
+        $I->fillField(SecondPage::$startTime,$reservationUnSuccess['time']);
+        $I->click(FirstPage::$addOrEditButton);
+        //$I->pause();
+    }
 }

@@ -23,6 +23,10 @@ class EditReservationCest
      */
     protected $reservation4;
     /**
+     * @var
+     */
+    protected $reservation5;
+    /**
      * EditReservationCest constructor.
      */
     public  function __construct()

@@ -1,4 +1,4 @@
-<?php 
+<?php
 use Step\Acceptance\FirstSteps;
 use Step\Acceptance\SecondSteps;
 include 'EditReservationCest.php';

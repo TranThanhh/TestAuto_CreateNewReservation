@@ -25,6 +25,7 @@ class ReservationsCest extends EditReservationCest
     public function createFailWithIDInvalid(FirstSteps $I,$scenario)
     {
         $I->openNewTab();
+        $I->wantToTest("I want to test Create successfully with value valid!");
         $I->createReservation();
         $I=new SecondSteps($scenario);
         $I->fillInput($this->reservation5);
@@ -40,6 +41,7 @@ class ReservationsCest extends EditReservationCest
     public function createFailWithIDNull(FirstSteps $I,$scenario)
     {
         $I->openNewTab();
+        $I->wantToTest("I want to test Create successfully with ID was null!");
         $I->createReservation();
         $I=new SecondSteps($scenario);
         $I->fillInput($this->reservation2);
@@ -56,6 +58,7 @@ class ReservationsCest extends EditReservationCest
     public function createFailWithNumOfPersonNull(FirstSteps $I,$scenario)
     {
         $I->openNewTab();
+        $I->wantToTest("I want to test Create successfully with Num of Person was null!");
         $I->createReservation();
         $I=new SecondSteps($scenario);
         $I->fillInput($this->reservation3);
@@ -71,6 +74,7 @@ class ReservationsCest extends EditReservationCest
     public function createFailWithTimeNull(FirstSteps $I,$scenario)
     {
         $I->openNewTab();
+        $I->wantToTest("I want to test Create Unsuccessfully with Time was null!");
         $I->createReservation();
         $I=new SecondSteps($scenario);
         $I->fillInput($this->reservation4);
